@@ -1,0 +1,190 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --primary-white-color: #ffffff;
+  --accent-color: #2196f3;
+  --hero-btn-accent-color: #188ce8;
+  --back-ground-light: #e5e5e5;
+
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --main-letter-spacing: 0.03em;
+  --main-font-weight: 400;
+}
+
+body {
+  font-family: var(--main-font);
+  font-weight: var(--main-font-weight);
+  letter-spacing: var(--main-letter-spacing);
+  color: var(--primary-text-color);
+}
+
+.nav a,
+.contacts a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav a {
+  color: var(--title-text-color);
+}
+
+.nav a:hover,
+.contacts a:hover,
+.nav a:focus,
+.contacts a:focus {
+  color: var(--accent-color);
+}
+
+.link.current {
+  color: var(--accent-color);
+}
+
+.logo {
+  color: #000000;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo span {
+  color: var(--accent-color);
+}
+
+.footer .logo {
+  color: var(--primary-white-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Временно, чтобы был виден белый текст */
+.hero,
+.footer {
+  background-color: #2f303a;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  color: var(--primary-white-color);
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  text-align: center;
+  cursor: pointer;
+
+  color: var(--title-text-color);
+  background: var(--back-ground-light);
+}
+
+.hero-button {
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.hero-button,
+.button:hover,
+.button:focus {
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+}
+
+.hero-button:hover {
+  background-color: var(--hero-btn-accent-color);
+}
+
+.advantages h3 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--title-text-color);
+}
+
+.advantages p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.team {
+  background: var(--back-ground-light);
+}
+
+.works h2,
+.team h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+
+  color: var(--title-text-color);
+}
+
+.team > ul {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team h3 {
+  font-weight: 500;
+
+  color: var(--title-text-color);
+}
+
+.address a {
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.addr {
+  color: var(--primary-white-color);
+}
+
+.tel,
+.mail {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* only for  Portfolio.html */
+
+.our-work h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+
+  color: var(--title-text-color);
+}
+
+.our-work p {
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: left;
+}
