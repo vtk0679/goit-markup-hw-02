@@ -4,7 +4,8 @@
   --primary-white-color: #ffffff;
   --accent-color: #2196f3;
   --hero-btn-accent-color: #188ce8;
-  --back-ground-light: #e5e5e5;
+  --hero-btn-black-color: #000000;
+  --back-ground-light: #F5F4FA;
 
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
@@ -24,99 +25,136 @@ body {
   color: inherit;
 }
 
-.nav a,
-.contacts a {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.list {
+  list-style: none;
 }
 
-.nav a {
-  color: var(--title-text-color);
+/* --- Временные стили, чтобы был виден белый текст --- */
+.hero,
+.footer {
+  background-color: #2f303a;
 }
 
-.nav a:hover,
-.contacts a:hover,
-.nav a:focus,
-.contacts a:focus {
-  color: var(--accent-color);
+.team {
+  background: var(--back-ground-light);
+   text-align: center; 
 }
 
-.link.current {
-  color: var(--accent-color);
-}
-
-.logo.link {
-  color: #000000;
+/* --- Header --- */
+.logo {
+  color: var(--hero-btn-black-color);
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
 
-.logo span {
+.nav-link, .contacts-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-link {
+  color: var(--title-text-color);
+}
+
+.nav-link:hover, .nav-link:focus,
+.contacts-link:hover, .contacts-link:focus,
+.logo span, .nav-link.current {
   color: var(--accent-color);
 }
+
+/* --- CSS for portfolio.html --- */
+
+.filter-button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: inherit;
+  text-align: center;
+  cursor: pointer;
+
+  background-color: var(--back-ground-light);
+  color: var(--title-text-color);
+}
+
+.filter-button:focus, .filter-button:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+.works-list-item h2{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
+}
+
+.works-list-item p {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* --- Footer --- */
 
 .footer .logo {
   color: var(--primary-white-color);
 }
 
-.list {
-  list-style: none;
+.addr, .mail, .tel {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  text-align: left;
+}
+.addr {
+  color: var(--primary-white-color);
 }
 
-/* Временно, чтобы был виден белый текст */
-.hero,
-.footer {
-  background-color: #2f303a;
+.mail, .tel {
+  color: rgba(255, 255, 255, 0.6);
 }
+
+/* --- CSS for index.html --- */
 
 .hero {
   text-align: center;
 }
 
-.hero h1 {
+.hero-title {
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
+  text-transform: uppercase;
 
   color: var(--primary-white-color);
-}
-
-.button {
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.63;
-  text-align: center;
-  cursor: pointer;
-
-  color: var(--title-text-color);
-  background: var(--back-ground-light);
 }
 
 .hero-button {
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  font-family: inherit;
+font-size: 16px;
+font-weight: 700;
+line-height: 1.88;
+letter-spacing: 0.06em;
+text-align: center;
+cursor: pointer;
+
+background: var(--accent-color);
+color: var(--primary-white-color);
 }
 
-.hero-button,
-.button:hover,
-.button:focus {
-  color: var(--primary-white-color);
-  background: var(--accent-color);
+.hero-button:hover, .hero-button:focus {
+  background: var(--hero-btn-accent-color);
 }
 
-.hero-button:hover {
-  background-color: var(--hero-btn-accent-color);
-}
-
-.advantages h3 {
+.advantages-list-item h3{
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -125,17 +163,12 @@ body {
   color: var(--title-text-color);
 }
 
-.advantages p {
+.advantages-list-item p {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
 }
 
-.team {
-  background: var(--back-ground-light);
-}
-
-.works h2,
-.team h2 {
+.title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
@@ -144,55 +177,16 @@ body {
   color: var(--title-text-color);
 }
 
-.team > ul {
+.team-list-item h3,
+.team-list-item p {
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
+  text-align: center; 
 }
 
 .team-list-item h3 {
   font-weight: 500;
-  font-size: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  text-align: inherit;
 
   color: var(--title-text-color);
 }
 
-.team-list-item p {
-  text-align: inherit;
-}
-
-.address a {
-  font-size: 14px;
-  line-height: 1.71;
-  font-style: normal;
-}
-
-.addr {
-  color: var(--primary-white-color);
-}
-
-.tel,
-.mail {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-/* only for  Portfolio.html */
-
-.our-work h2 {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  text-align: left;
-
-  color: var(--title-text-color);
-}
-
-.our-work p {
-  font-size: 16px;
-  line-height: 1.88;
-  text-align: left;
-}
